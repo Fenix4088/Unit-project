@@ -1,0 +1,115 @@
+.flexible-managment {
+    position: relative;
+    padding: 70px 0 40px;
+    border-bottom: 1px solid #e1e1e1;
+    overflow: hidden;
+        &::after {
+            content: '';
+            .decoration-triangle-mixin;
+            display: block;
+            position: absolute;
+                top: -20px;
+                left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+
+            @media(min-width: 768px) {
+                display: none;
+            }
+        
+            @media(min-width: 1200px) {
+                display: block;
+                top: 38%;
+                left: -45px;
+            }
+        }
+
+    @media(min-width: 768px) {
+        padding: 70px 0 45px;
+    }
+
+    @media(min-width: 1200px) {
+        padding: 95px 0 20px;
+    }
+}
+
+.flexible-managment__content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;   
+
+
+    @media(min-width: 768px) {
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: unset;
+    }
+
+    @media(min-width: 1200px) {
+        flex-flow: row nowrap;
+        align-items: center;   
+    }
+}
+
+.flexible-managment__content-desc {
+    text-align: center;
+    max-width: 370px;
+        p {
+            .paragraph-grey-mixin;
+        }
+
+        .section-title {
+            margin-bottom: 34px;
+
+            @media(min-width: 768px) {
+                margin-bottom: 37px;
+            }
+
+            @media(min-width: 1200px) {
+                margin-bottom: 45px;
+            }
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+
+            @media(min-width: 768px) {
+                margin-bottom: 17px;
+            }
+        
+            @media(min-width: 1200px) {
+                margin-bottom: 40px;
+             
+            }
+        }
+
+    @media(min-width: 768px) {
+        margin: 20px 0 0 35px;
+        max-width: 380px;
+        text-align: left;
+    }
+
+    @media(min-width: 1200px) {
+        margin: 0;
+        max-width: 50%;
+        padding: 0 83px 24px;
+    }
+            
+}
+
+.flexible-managment__content-img {
+    margin-top: 45px;
+    max-width: 200px;
+    
+    @media(min-width: 768px) {
+        margin-top: 0;
+        max-width: 270px;
+    }
+
+    @media(min-width: 1200px) {
+        padding-left: 66px;
+        max-width: 50%;
+    }
+}
+
+
+

@@ -1,0 +1,114 @@
+.focus {
+    position: relative;
+    padding-top: 70px;
+    overflow: hidden;
+        &::after {
+            content: '';
+            position: absolute;
+                top: -115px;
+                right: 50%;
+            transform: translate(50%, 50%) rotate(45deg);
+            .decoration-triangle-mixin;
+
+            @media(min-width: 768px) {
+                display: none;
+            }
+        
+            @media(min-width: 1200px) {
+                display: block;
+                top: 39%;
+                right: -130px;
+                transform: translate(10%, -50%) rotate(45deg);
+            }
+        }
+    @media(min-width: 768px) {
+        padding-top: 60px;
+    }
+
+    @media(min-width: 1200px) {
+        padding-top: 90px;   
+    }
+}
+
+.focus__row {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    justify-content: space-between;
+
+    @media(min-width: 768px) {
+        flex-flow: row nowrap;
+    }
+
+    @media(min-width: 1200px) {
+        align-items: center;
+    }
+
+}
+
+.focus__img {
+    position: relative;
+    min-width: 270px;
+     img {
+
+        @media(min-width: 768px) {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
+            max-width: none;    
+        }
+
+    
+    }
+
+    @media(min-width: 768px) {
+        max-width: 270px;
+        height: 520px;
+    }
+
+    @media(min-width: 1200px) {
+        max-width: 470px;
+        width: 39%;
+        height: 731px;
+    }
+}
+    
+.focus__content {
+    max-width: 470px;
+    padding-bottom: 30px;
+    align-self: center;
+    text-align: center;
+        .section-title {
+            margin-bottom: 45px;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+            @media(min-width: 768px) {
+                margin-bottom: 20px;
+            }
+        
+            @media(min-width: 1200px) {
+                margin-bottom: 45px;
+                
+            }
+        }
+
+        p {
+            .paragraph-grey-mixin;
+        }
+
+    @media(min-width: 768px) {
+        margin-top: 20px;
+        margin-left: 43px;
+        padding-bottom: 130px;
+        align-self: unset;
+        text-align: left;
+    }
+    
+    @media(min-width: 1200px) {
+        margin-top: 0;
+        margin-left: 0;
+        
+    }
+}

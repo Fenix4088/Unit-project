@@ -1,0 +1,197 @@
+.clients {
+    padding: 75px 0;
+    background-color: #fff;
+
+
+    @media (min-width: 768px) {
+        padding: 75px 0 80px;
+        
+    }
+
+    @media (min-width: 1200px) {
+        padding: 110px 0 114px;
+        background-image: url(../img/section-our-clients/bg-our-cliens.svg);
+        background-repeat: no-repeat;
+        background-position: 51% 47%;
+        background-size: auto;
+    }
+}
+
+.clients__title {
+    margin-bottom: 45px;
+    text-align: center;
+    h2 {
+        font-size: 16px;
+        @media (min-width: 1200px) {
+            font-size: 14px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        margin-bottom: 35px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 72px;
+    }
+}
+
+.clients__header {
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        margin-bottom: 75px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 84px;
+    }
+    
+}
+
+.testimonial-carusel {
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.clients__testimonial-text {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    line-height: 2;
+    text-align: center;
+         p {
+            margin-bottom: 20px;
+
+            @media (min-width: 768px) {
+                margin-bottom: 30px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-bottom: 40px;
+            }
+        }
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 2.13;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 18px;
+        line-height: 2.222;
+    }
+}
+
+.clients__testimonial-user {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 768px) {
+            
+    }
+    @media (min-width: 1200px) {
+        flex-flow: row nowrap;
+    }
+
+}
+
+.clients__testimonial-photo {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    @media (min-width: 1200px) {
+        margin-right: 40px;
+    }
+}
+
+.clients__testimonial-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    line-height: 1.3;
+}
+
+.testimonial-carusel.owl-carousel .owl-nav button.owl-prev  {
+    .carousel-arrow-mixin;
+    margin-right: 10px;
+    // position: absolute;
+        // bottom: -32px;
+        // left: 15px;
+    // transform: translate(100%, 100%);
+    background-image: url(../img/section-our-clients/carousel/arrow-left.svg);
+    span {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+    position: absolute;
+        top: 25%;
+        left: 0;
+        transform: translate(100%, -50%);
+        margin-right: 0;
+
+    }
+    @media (min-width: 1200px) {
+        top: 0;
+        left: -15%;
+        transform: translate(50%, 50%);
+    }
+        
+}
+
+.testimonial-carusel.owl-carousel .owl-nav button.owl-next {
+    .carousel-arrow-mixin;
+    // position: absolute;
+        // bottom: -32px;
+        // right: 15px;
+    // transform: translate(-100%, 100%);
+    margin-left: 10px;
+    background-image: url(../img/section-our-clients/carousel/arrow-right.svg);
+    span {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        position: absolute;
+        top: 25%;
+        right: 0;
+        transform: translate(-100%, -50%);
+        margin-right: 0;
+    }
+
+    @media (min-width: 1200px) {
+        top: 0;
+        right: -15%;
+        transform: translate(-50%, 50%);
+
+    }
+}
+
+.owl-nav {
+    max-width: 270px;
+    margin: 0 auto;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+        @media(min-width: 768px) {
+            display: block;
+            max-width: unset;
+            margin-top: 0;
+        }
+}
